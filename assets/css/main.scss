@@ -36,3 +36,6 @@
     "layout/archive",
     "layout/sidebar"
 ;
+
+/* Customization: no profile photo is set, so hide the empty avatar slot in the sidebar */
+.author__avatar { display: none; }
