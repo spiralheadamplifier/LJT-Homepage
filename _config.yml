@@ -38,6 +38,47 @@ comments:
 atom_feed:
   hide                   : false
 
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - docker-compose.yaml
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README*
+  - tmp
+  - vendor
+  - AGENTS.md
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
+keep_files:
+  - .git
+  - .svn
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
 # Conversion
 markdown: kramdown
 highlighter: rouge
