@@ -36,12 +36,16 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .devcontainer
   - .github
   - .jekyll-assets-cache
   - .sass-cache
+  - AGENTS.md
   - CHANGELOG
   - Capfile
   - config
+  - docker-compose.yaml
+  - docker-compose.yml
   - Dockerfile
   - Gemfile
   - Gruntfile.js
@@ -49,16 +53,18 @@ exclude:
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
   - README.md
-  - tmp
-  - vendor
+  - scripts
+  - talkmap
   - talkmap.ipynb
   - talkmap.py
-  - talkmap
+  - tmp
+  - vendor
 
 kramdown:
   input: GFM
