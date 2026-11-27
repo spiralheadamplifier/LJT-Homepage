@@ -1,2 +1,45 @@
+# LJT-Homepage site configuration (Academic Pages template).
+locale: "en-US"
+site_theme: "default" # themes: "default", "air", "sunrise", "mint", "dirt", "contrast"
 title: "Junteng Liu"
+title_separator: "-"
 name: "Junteng Liu"
+description: "First-year PhD candidate at HKUST NLP Group. Research focuses on natural language processing and machine learning; research interests include LLM Reasoning and Reinforcement Learning, Hallucination in Vision-Language Models (VLM), and LLM truthfulness and Interpretability."
+url: https://spiralheadamplifier.github.io # project site URL; use baseurl for the repo subpath
+baseurl: "/LJT-Homepage" # subpath of the site, e.g. "/blog" or "/[Your Repo Name]"
+repository: "spiralheadamplifier/LJT-Homepage"
+
+# Sidebar author profile (see /_includes/author-profile.html; blank fields are hidden).
+author: {avatar: "profile.png", name: "Junteng Liu", bio: "First-year PhD candidate at HKUST NLP Group. Research focuses on natural language processing and machine learning; research interests include LLM Reasoning and Reinforcement Learning, Hallucination in Vision-Language Models (VLM), and LLM truthfulness and Interpretability.", employer: "Hong Kong University of Science and Technology", email: "jliugi@connect.ust.hk", googlescholar: "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate", github: "Vicent0205", twitter: "junteng88716710"}
+
+# Underscore-prefixed files/directories to include in the built site.
+include: [".htaccess", "_pages", "files"]
+
+# Collections used by the template.
+collections:
+  teaching: {output: true, permalink: "/:collection/:path/"}
+  publications: {output: true, permalink: "/:collection/:path/"}
+  portfolio: {output: true, permalink: "/:collection/:path/"}
+  talks: {output: true, permalink: "/:collection/:path/"}
+
+# Defaults for pages and collection documents.
+defaults:
+  - {scope: {path: "", type: posts}, values: {layout: single, author_profile: true, read_time: true, comments: true, share: true, related: true}}
+  - {scope: {path: "", type: pages}, values: {layout: single, author_profile: true}}
+
+# Outputting.
+permalink: /:categories/:title/
+timezone: Etc/UTC
+
+# Plugins (all supported by GitHub Pages).
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Liquid archive pages (GitHub Pages-compatible).
+category_archive: {type: liquid, path: "/categories/"}
+tag_archive: {type: liquid, path: "/tags/"}
